@@ -131,6 +131,7 @@ jobs:
           docker_layer_caching: true
       - run-make:
           command: test
+      - run: bash <(curl -s https://codecov.io/bash)
 
   test-python36:
     executor: python36
@@ -140,6 +141,7 @@ jobs:
           docker_layer_caching: true
       - run-make:
           command: test
+      - run: bash <(curl -s https://codecov.io/bash)
 
   test-python37:
     executor: python37
@@ -149,6 +151,7 @@ jobs:
           docker_layer_caching: true
       - run-make:
           command: test
+      - run: bash <(curl -s https://codecov.io/bash)
 
   test-python38:
     executor: python38
@@ -158,6 +161,7 @@ jobs:
           docker_layer_caching: true
       - run-make:
           command: test
+      - run: bash <(curl -s https://codecov.io/bash)
 
   lint:
     executor: python36
